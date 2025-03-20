@@ -1,0 +1,99 @@
+az-400 links
+
+AuthN options for self hosted agent - 
+https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/agent-authentication-options?view=azure-devops
+
+
+Recover Deletd Org - https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/recover-your-organization?view=azure-devops
+
+Boards Process Types = https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&tabs=agile-process
+
+Cycle Time, Lead time - https://learn.microsoft.com/en-us/azure/devops/report/dashboards/cycle-time-and-lead-time?view=azure-devops
+
+Agile Glossary - https://www.agilealliance.org/agile101/agile-glossary/
+
+Access Levels: 
+https://learn.microsoft.com/en-us/azure/devops/organizations/security/access-levels?view=azure-devops
+
+Azure DevOps Permissions - https://learn.microsoft.com/en-us/azure/devops/organizations/security/about-permissions?view=azure-devops&tabs=preview-page
+
+************************************************* GIT AND AZURE REPO *******************************************
+git commands - https://learn.microsoft.com/en-us/azure/devops/repos/git/command-prompt?view=azure-devops
+
+Git restore vs Revert  - https://www.datacamp.com/tutorial/git-reset-revert-tutorial
+
+GIt data recovery and Maintaince - https://git-scm.com/book/en/v2/Git-Internals-Maintenance-and-Data-Recovery
+
+Git Large Files - https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github
+
+MIgrate TFVC to Git - Azure Repo = https://learn.microsoft.com/en-us/azure/devops/repos/git/import-from-tfvc?view=azure-devops
+
+
+******************************************** AZURE PIPELINES ****************************************************
+
+agents - https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=yaml%2Cbrowser
+
+YAML PIPELINE BASICS: https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops
+
+YAML Refrence schema - https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/?view=azure-pipelines
+YAML Cheatsheet - https://quickref.me/yaml.html
+yaml templates - https://learn.microsoft.com/en-us/azure/devops/pipelines/process/templates?view=azure-devops&pivots=templates-includes
+
+cron expression for scheduled pipeline - https://crontab.guru/
+
+Pipeline tempaltes - https://learn.microsoft.com/en-us/azure/devops/pipelines/process/templates?view=azure-devops&pivots=templates-includes
+
+DSC with Azure Pipeline - https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/azure-amp-desired-state-configuration-part-2-4/ba-p/2609036
+
+Approvals and Environements - https://samlearnsazure.blog/2020/02/05/approvals-in-environments/
+
+Install AGnet on WIndiws - https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/windows-agent?view=azure-devops
+
+Service COnnection azure 0 https://learn.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml#common-service-connection-types
+
+Trigger types - https://learn.microsoft.com/en-us/azure/devops/pipelines/build/triggers?view=azure-devops
+
+Azure Pipeline Test - https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-glossary?view=azure-devops
+
+
+
+ARM quicktsrat template = https://learn.microsoft.com/en-us/samples/browse/?expanded=azure&products=azure-resource-manager
+
+Application isights = https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview
+
+Sonarcloud Notifications - https://community.sonarsource.com/t/how-to-get-notifications-from-sonarcloud-after-every-scan/42469
+
+
+
+
+$file = path
+
+SCOPE=/subscriptions/f68d95a4-8d60-43a8-8e65-6bd3ec7d4390/resourceGroups/T/providers/Microsoft.Storage/storageAccounts/$acc
+
+az ad signed-in-user show --query id -o tsv | az role assignment create \
+    --role "Storage Blob Data Contributor" \
+    --assignee @- \
+    --scope "$SCOPE"
+
+az storage account create --name $acc --resource-group $RG --location eastus --sku Standard_RAGRS --kind StorageV2 --allow-blob-public-access true
+
+az storage blob service-properties update --account-name $acc --static-website --404-document error.html --index-document index.html --auth-mode login
+
+# one file 
+az storage blob upload -f $file -c '$web' -n index.html --auth-mode login
+
+# upload entire directory
+az storage blob upload-batch -s $file -d `$web --account-name $acc --auth-mode login
+
+# URL
+URL=$(az storage account show --name $acc --query "[primaryEndpoints.web]" -o tsv)
+
+# annnnouce
+echo -e "************* Go to \n "$URL" \n ********************** view your webite" 
+
+az storage account delete --name $acc --resource-group $RG 
+
+
+
+
+Could not find a pool with name ubuntu-latest. The pool does not exist or has not been authorized for use. For authorization details, refer to https://aka.ms/yamlauthz.

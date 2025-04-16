@@ -18,7 +18,10 @@ steps:
    echo "Current branch is: $(Build.SourceBranch)"
    echo "Source branch (PR head): $(System.PullRequest.SourceBranch)"
    echo "Target branch (PR base): $(System.PullRequest.TargetBranch)"
-   git checkout "$(System.PullRequest.SourceBranch)"
+   echo ""
+   pwd
+   ls -ltr 
+
 
 # --------------------------------
 

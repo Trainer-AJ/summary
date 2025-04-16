@@ -8,3 +8,5 @@ pool:
 
 steps:
 - bash: echo test
+- script: python calculator.py
+  workingDirectory: PythonApp

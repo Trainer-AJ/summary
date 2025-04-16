@@ -12,10 +12,11 @@ pool:
 # pick branch1 code => test it 
 
 # ------------ checkout ---------
-
+steps:
+- script: git checkout ${{ variables['System.PullRequest.SourceBranch'] }}
 
 # --------------------------------
-steps:
-- bash: echo test && echo $(System.PullRequest.targetBranchName)
+
+- bash: echo test
 - script: python calculator.py
   workingDirectory: PythonApp

@@ -1,0 +1,10 @@
+pr:
+# if the target of PR is any one of below branch: 
+- main
+- development
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- bash: echo test

@@ -13,7 +13,8 @@ pool:
 
 # ------------ checkout ---------
 steps:
-- script: git checkout ${{ variables['System.PullRequest.SourceBranch'] }}
+# - script: git checkout ${{ variables['System.PullRequest.SourceBranch'] }}
+- script: git checkout $(System.PullRequest.SourceBranch)
 
 # --------------------------------
 

@@ -6,7 +6,16 @@ pr:
 pool:
   vmImage: ubuntu-latest
 
+# AIM : 
+# 1. Get the code of PR source Branch
+# example: if branch1 is set to merge to main 
+# pick branch1 code => test it 
+
+# ------------ checkout ---------
+
+
+# --------------------------------
 steps:
-- bash: echo test
+- bash: echo test && echo $(System.PullRequest.targetBranchName)
 - script: python calculator.py
   workingDirectory: PythonApp

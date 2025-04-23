@@ -1,5 +1,8 @@
 # summary
+
 ![](https://docs.bmc.com/xwiki/bin/view/Service-Management/IT-Service-Management/BMC-Helix-ITSM-Service-Desk/servicedesk251/Getting-started/Key-concepts/Incident-Management-overview/)
+ 
+  
   Here's an overview of these components:
 
 

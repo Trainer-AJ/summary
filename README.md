@@ -1,5 +1,49 @@
 # summary
 
+  Here's an overview of these components:
+
+
+---
+
+🔧 Incident Management
+
+    
+
+
+---
+
+🧩 Problem Management
+
+Aims to identify and eliminate the root causes of incidents to prevent recurrence. This process includes conducting root cause analyses and coordinating with Change Management to implement solutions. 
+
+
+---
+
+🔄 Change Management
+
+Manages the lifecycle of all changes to minimize disruption to IT services. It encompasses stages such as initiation, assessment, planning, implementation, and closure, ensuring that changes are systematically and efficiently handled. 
+
+
+---
+
+📚 Knowledge Management
+
+    
+
+
+---
+
+🤖 BMC Helix ITSM Insights
+
+    
+
+
+---
+
+  If you would like more detailed information on any of these areas or guidance on implementing them, feel free to ask!
+
+
+
 ## ITSM process types : 
 Here’s a real-life example using a bank's mobile app to explain each ITSM concept:
 

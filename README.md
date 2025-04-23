@@ -1,10 +1,11 @@
 # summary
 
-![](https://docs.bmc.com/xwiki/bin/view/Service-Management/IT-Service-Management/BMC-Helix-ITSM-Service-Desk/servicedesk251/Getting-started/Key-concepts/Incident-Management-overview/)
+![](https://docs.bmc.com/xwiki/bin/download/Service-Management/IT-Service-Management/BMC-Helix-ITSM-Service-Desk/servicedesk251/Getting-started/Key-concepts/Incident-Management-overview/WebHome/Apps_Relationships.png?height=400&rev=1.1)
  
   
   Here's an overview of these components:
 
+![](https://docs.bmc.com/xwiki/bin/download/Service-Management/IT-Service-Management/BMC-Helix-ITSM-Service-Desk/servicedesk251/Getting-started/Key-concepts/Incident-Management-overview/WebHome/Incident%20Management%20Process.png?rev=1.1)
 
 ---
 

@@ -95,5 +95,38 @@ Goal: Proactively avoid Monday outages using data patterns.
 
 ---
 
-Let me know if you want a version tailored to another domain (e.g., e-commerce, hospitals, etc.).
+You're right! Here's a continuation with Asset Management and Service Desk, using the same bank mobile app example:
+
+
+---
+
+6. Asset Management
+
+What it is: Tracks all IT assets—hardware, software, licenses, etc.
+Example:
+
+The login server (where the incident occurred) is tracked in the CMDB (Configuration Management Database).
+
+IT knows its owner, specs, warranty, and current health.
+Goal: Know what assets exist, how they're used, and manage them efficiently.
+
+
+
+---
+
+7. Service Desk
+
+What it is: The single point of contact between users and IT.
+Example:
+
+A customer calls saying “I can't log in.”
+
+The service desk logs the ticket, gives updates, and escalates it to the right team.
+Goal: Provide fast, friendly, and efficient support to users.
+
+
+
+---
+
+Let me know if you want a simple diagram or a cheat sheet for all of these.
 

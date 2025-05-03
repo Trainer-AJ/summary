@@ -1,4 +1,190 @@
 
+
+Great questions — and you're spot-on in how you're connecting Agile/Scrum with Jira and ITIL with ServiceNow. Here's a clear breakdown:
+
+
+---
+
+Where do Product Owners and Product Managers work?
+
+Product Owners (POs) and Product Managers (PMs) typically work in Jira.
+
+They define and prioritize user stories, epics, and backlog items.
+
+They participate in Agile ceremonies (sprint planning, retrospectives, reviews).
+
+Their focus is on delivering business value and guiding the development team using Agile principles.
+
+
+They may interact with ServiceNow only for:
+
+Approving technical change requests
+
+Tracking incident impact on product features
+
+Coordinating release schedules if change governance is centralized there
+
+
+
+
+---
+
+Jira = Agile (Business/Development Side)
+
+Agile and Scrum frameworks are commonly practiced in Jira.
+
+Jira is ideal for iterative development, tracking sprints, backlogs, and stories.
+
+Teams focus on delivering product increments every sprint (2–4 weeks typically).
+
+
+
+---
+
+ServiceNow = ITIL (Operations/Implementation/Governance Side)
+
+ServiceNow supports ITIL processes:
+
+Change Management
+
+Incident/Problem Management
+
+Configuration Management (CMDB)
+
+
+It’s used by infrastructure teams, operations, and compliance teams to plan, approve, and track production changes.
+
+
+
+---
+
+So, to your point:
+
+Yes — Jira is generally where Agile/Scrum happens (business and dev planning).
+
+Yes — ServiceNow is where ITIL practices take place (technical governance and ops).
+
+They complement each other in organizations that separate Agile product development from IT change control.
+
+
+Would you like a visual flowchart that maps Jira and ServiceNow roles and activities side by side?
+
+
+## Jira <==> servicenow
+You're asking an excellent and very real-world question — and yes, you're right to dig into this. Let's break it down clearly:
+
+
+---
+
+As a Developer: Do you use ServiceNow?
+
+Typically, no — developers don’t work directly in ServiceNow for day-to-day tasks.
+
+Your work is driven from Jira in the Agile/Scrum model (stories, bugs, tasks).
+
+But you may be indirectly involved with ServiceNow when:
+
+A bug is raised in production (via an incident).
+
+Operations or L2/L3 teams need you to fix it.
+
+
+
+
+---
+
+So how do you get visibility of production bugs?
+
+Typical flow:
+
+1. Prod Support Team logs an incident in ServiceNow.
+
+They diagnose and determine: "This is a bug."
+
+They tag or note: “Needs Dev Team involvement.”
+
+
+
+2. Depending on your company’s process, one of these happens:
+
+A ticket is manually created in Jira, linked to the ServiceNow incident.
+
+Sometimes done by support, BA, or a dedicated triage person.
+
+
+An integration exists between ServiceNow and Jira:
+
+Incident → Bug in Jira created automatically.
+
+Statuses sync (e.g., when the bug is fixed in Jira, the incident gets updated).
+
+
+
+
+3. You (the dev) get assigned the bug in Jira.
+
+You work on it like any other ticket — through your sprint or Kanban board.
+
+Once fixed, you mark it resolved.
+
+That resolution flows back to ServiceNow.
+
+
+
+
+
+---
+
+How does the company track bugs, fixes, and metrics?
+
+In Jira:
+
+Bugs can be tagged (e.g., Production Bug, P1, Reported via ServiceNow).
+
+Reports/Dashboards show:
+
+Number of bugs raised
+
+SLA performance
+
+Mean time to resolution
+
+Which were resolved, reopened, etc.
+
+
+
+In ServiceNow:
+
+The incident/problem record is updated with Jira bug ID.
+
+Support team closes the incident once the fix is verified.
+
+
+
+
+---
+
+Summary:
+
+Yes, you track and work on bugs in Jira.
+
+But the origin may be ServiceNow, and a good integration or process bridges that gap.
+
+Companies often use automated sync tools like:
+
+Exalate
+
+ZigiOps
+
+ServiceNow-Jira integration hub
+
+
+
+Would you like a visual example of this flow from incident to Jira bug and back?
+
+
+
+
 Yes, that's correct — and you've described a common IT change management workflow. Here's how it typically works:
 
 1. Business Analyst (BA) creates an Application Change Request (ACR) in Jira, outlining the business need or enhancement.

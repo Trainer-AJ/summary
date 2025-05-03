@@ -1,3 +1,41 @@
+
+Yes, that's correct — and you've described a common IT change management workflow. Here's how it typically works:
+
+1. Business Analyst (BA) creates an Application Change Request (ACR) in Jira, outlining the business need or enhancement.
+
+
+2. This ACR is reviewed, and once approved from a business standpoint, it is integrated or transferred (manually or via integration tools) into an IT Service Management (ITSM) platform like ServiceNow.
+
+
+3. In ServiceNow:
+
+A formal Change Request (CR) is created.
+
+It is categorized (e.g., standard, normal, emergency).
+
+Associated Work Orders or Tasks are created for different IT teams (e.g., development, infrastructure).
+
+
+
+4. The CR goes through an approval workflow:
+
+Reviewed by stakeholders.
+
+Requires Change Manager or CAB (Change Advisory Board) approval depending on impact/risk.
+
+
+
+5. Once approved, the technical work begins, and progress is tracked via work orders/tasks until the change is implemented and closed.
+
+
+
+This ensures alignment between business needs (captured in Jira) and IT execution (managed in ServiceNow).
+
+Would you like a flowchart or diagram to visualize this process?
+
+
+
+
 # summary
 
 ![](https://docs.bmc.com/xwiki/bin/download/Service-Management/IT-Service-Management/BMC-Helix-ITSM-Service-Desk/servicedesk251/Getting-started/Key-concepts/Incident-Management-overview/WebHome/Apps_Relationships.png?height=400&rev=1.1)
